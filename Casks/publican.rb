@@ -13,6 +13,14 @@ cask "publican" do
 
   caveats <<~EOS
     Publican is currently an unsigned alpha build.
-    macOS may require right-click > Open the first time you launch it.
+    macOS may block it with a warning such as:
+
+      "Publican.app is damaged and can't be opened. You should move it to the Bin."
+
+    For this alpha build, remove the quarantine flag manually before launching:
+
+      xattr -dr com.apple.quarantine /Applications/Publican.app
+
+    Long term, Publican should be signed and notarised so this workaround is not needed.
   EOS
 end
