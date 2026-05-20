@@ -1,6 +1,6 @@
 cask "publican" do
-  version "0.1.2"
-  sha256 "9f25e768c0920cebbe24c59442496e8090995b413e3539a416d98f84eca55581"
+  version "0.1.3"
+  sha256 "2df36c45b46971e0e02a2e4dd0a3fa5dc5bc8503aa93be4e21902fad0c8ce1e6"
 
   url "https://github.com/anddav123/Publican/releases/download/v#{version}/Publican-macOS.dmg"
   name "Publican"
